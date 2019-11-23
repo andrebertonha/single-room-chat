@@ -8,6 +8,12 @@ const Message = use('App/Models/Message')
 const { broadcast } = require('../../utils/socket.utils')
 
 class RoomController {
+
+  async index () {
+    const messages = Message.all()
+    return messages
+  }
+
   async select ({ params }) {
 
     console.log(params.id, 'teste')

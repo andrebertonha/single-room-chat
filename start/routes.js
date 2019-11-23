@@ -9,3 +9,5 @@ Route.group(() => {
   Route.get(':id', 'RoomController.select')
   Route.post(':id', 'RoomController.createMessage')
 }).prefix('/rooms')
+
+Route.get('/messages', 'RoomController.index')
