@@ -27,6 +27,7 @@
       @else
         <div class="onboard">
           <form action="/" method="GET">
+            {{ csrfField() }}
             <input type="text" id="name" name="username" placeholder="Enter your name" autofocus=1>
           </form>
         </div>
