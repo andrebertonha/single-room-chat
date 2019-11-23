@@ -5,7 +5,7 @@ const uuidv4 = require('uuid/v4')
 const Room = use('App/Models/Room')
 const Message = use('App/Models/Message')
 
-const { broadcast } = require('../../utils/socket.utils')
+//const { broadcast } = require('../../utils/socket.utils')
 
 class RoomController {
 
